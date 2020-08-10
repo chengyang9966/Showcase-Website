@@ -35,7 +35,7 @@ function init() {
     const nextText = nextPage.querySelector(".details");
     const portofolio = document.querySelector(".portofolio");
 
-    const tl = new TimelineMax({
+    let tl = new TimelineMax({
       onStart: function() {
         slides.forEach(slide => {
           slide.style.pointerEvents = "none";
